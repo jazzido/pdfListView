@@ -470,7 +470,7 @@ PageView.prototype = {
         var scale = this.listView.scale;
 
         var viewport = this.viewport =
-            this.page.pdfPage.getViewport(scale, this.rotation);
+            this.page.pdfPage.getViewport(scale);
 
         this.normalWidth = viewport.width / scale;
         this.normalHeight = viewport.height / scale;
